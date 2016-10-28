@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.pansmileSoftware.view.MainView">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+    <margin top="15" left="15" bottom="15" right="15"/>
+    <constraints>
+      <xy x="20" y="20" width="900" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-15175289"/>
+      <font name="Helvetica Neue" style="0"/>
+      <foreground color="-4473925"/>
+      <maximumSize width="900" height="400"/>
+      <minimumSize width="800" height="400"/>
+      <preferredSize width="850" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="8d473" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="true">
+            <minimum-size width="800" height="150"/>
+            <preferred-size width="850" height="150"/>
+            <maximum-size width="900" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-15175289"/>
+          <foreground color="-4476485"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="8a7fb" binding="tellmatchscroll">
+            <constraints>
+              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="150"/>
+                <preferred-size width="200" height="150"/>
+                <maximum-size width="200" height="1000"/>
+              </grid>
+            </constraints>
+            <properties>
+              <autoscrolls value="true"/>
+              <horizontalScrollBarPolicy value="30"/>
+              <verticalScrollBarPolicy value="20"/>
+              <visible value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="da4b6" class="javax.swing.JList" binding="midiTellMatches">
+                <constraints/>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <alignmentY value="0.0"/>
+                  <background color="-15175289"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <maximumSize width="200" height="1000"/>
+                  <minimumSize width="200" height="150"/>
+                  <preferredSize width="200" height="0"/>
+                  <selectionMode value="2"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="b6eef">
+            <constraints>
+              <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="4" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="250" height="150"/>
+                <preferred-size width="280" height="150"/>
+                <maximum-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <verticalScrollBarPolicy value="20"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="2209c" class="javax.swing.JList" binding="sources">
+                <constraints/>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <alignmentY value="0.0"/>
+                  <background color="-15175289"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <inheritsPopupMenu value="false"/>
+                  <layoutOrientation value="0"/>
+                  <maximumSize width="300" height="200"/>
+                  <minimumSize width="250" height="150"/>
+                  <preferredSize width="280" height="150"/>
+                  <selectionMode value="2"/>
+                  <toolTipText value="Select a source device."/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <scrollpane id="74ac0">
+            <constraints>
+              <grid row="0" column="2" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="8" fill="2" indent="0" use-parent-layout="false">
+                <minimum-size width="250" height="150"/>
+                <preferred-size width="280" height="150"/>
+                <maximum-size width="300" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="fd049" class="javax.swing.JList" binding="destinations">
+                <constraints/>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <alignmentY value="0.0"/>
+                  <background color="-15175289"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <maximumSize width="300" height="200"/>
+                  <minimumSize width="250" height="150"/>
+                  <preferredSize width="280" height="150"/>
+                  <toolTipText value="Select at least one destination device.&#10;"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+        </children>
+      </grid>
+      <grid id="db8ae" layout-manager="GridLayoutManager" row-count="2" column-count="26" same-size-horizontally="false" same-size-vertically="false" hgap="5" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="true">
+            <minimum-size width="800" height="150"/>
+            <preferred-size width="850" height="150"/>
+            <maximum-size width="900" height="150"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="0.5"/>
+          <background color="-15175289"/>
+          <enabled value="true"/>
+          <font name="Helvetica Neue" style="0"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="dda18" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="5">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="6" row-span="2" col-span="12" vsize-policy="3" hsize-policy="7" anchor="5" fill="0" indent="0" use-parent-layout="true">
+                <minimum-size width="250" height="150"/>
+                <preferred-size width="280" height="150"/>
+                <maximum-size width="300" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <alignmentX value="0.0"/>
+              <alignmentY value="0.0"/>
+              <background color="-15175289"/>
+              <foreground color="-16777216"/>
+              <verifyInputWhenFocusTarget value="false"/>
+              <visible value="true"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <hspacer id="8aa0a">
+                <constraints>
+                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <grid id="11a56" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="7" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="26"/>
+                    <preferred-size width="-1" height="26"/>
+                    <maximum-size width="-1" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="e2c57" class="javax.swing.JLabel" binding="inputChannelLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="80" height="26"/>
+                        <preferred-size width="80" height="26"/>
+                        <maximum-size width="80" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica Neue" style="0"/>
+                      <labelFor value="646d3"/>
+                      <text value="Input Channel"/>
+                    </properties>
+                  </component>
+                  <component id="646d3" class="javax.swing.JComboBox" binding="inputChannelSwitch">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="65" height="26"/>
+                        <preferred-size width="65" height="26"/>
+                        <maximum-size width="65" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <font name="Helvetica Neue" style="0"/>
+                    </properties>
+                  </component>
+                  <component id="a2724" class="javax.swing.JComboBox" binding="radixSwitch">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="65" height="26"/>
+                        <preferred-size width="65" height="26"/>
+                        <maximum-size width="65" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <editable value="false"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <requestFocusEnabled value="true"/>
+                    </properties>
+                  </component>
+                  <component id="82da9" class="javax.swing.JLabel" binding="radixLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="70" height="26"/>
+                        <preferred-size width="70" height="26"/>
+                        <maximum-size width="70" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica Neue" style="0"/>
+                      <labelFor value="a2724"/>
+                      <text value="Radix"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="55486" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="57e34" class="javax.swing.JCheckBox" binding="ignoreVelocityBox">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-15175289"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <text value="Ignore Velocity"/>
+                      <toolTipText value=" Ignore the velocity of incoming MIDI messages."/>
+                    </properties>
+                  </component>
+                  <component id="665a5" class="javax.swing.JCheckBox" binding="detectChannelCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="150" height="26"/>
+                        <preferred-size width="150" height="26"/>
+                        <maximum-size width="150" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-15175289"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <text value="Detect Channel"/>
+                      <toolTipText value="Set input channel according to incoming data when listening."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="d05c3" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="-1" height="26"/>
+                    <preferred-size width="-1" height="26"/>
+                    <maximum-size width="-1" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="eb718" class="javax.swing.JComboBox" binding="triggerType">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="250" height="26"/>
+                        <preferred-size width="280" height="26"/>
+                        <maximum-size width="300" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <editable value="true"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <foreground color="-16777216"/>
+                      <toolTipText value="Trigger message type."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="d7478" class="javax.swing.JTextField" binding="triggerMessage">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <disabledTextColor color="-4473925"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <text value="Push &quot;Listen&quot; or enter required message"/>
+                  <toolTipText value="Push &quot;Listen&quot; or enter required message"/>
+                </properties>
+              </component>
+              <grid id="706ac" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a23d9" class="javax.swing.JToggleButton" binding="listenButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="120" height="26"/>
+                        <preferred-size width="120" height="26"/>
+                        <maximum-size width="120" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-15175289"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <horizontalAlignment value="0"/>
+                      <text value="Listen"/>
+                    </properties>
+                  </component>
+                  <vspacer id="d1252">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="17108" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="5">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="18" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="true">
+                <minimum-size width="200" height="150"/>
+                <preferred-size width="200" height="150"/>
+                <maximum-size width="200" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-15175289"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="40df0" class="javax.swing.JComboBox" binding="presetBox">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="26"/>
+                    <preferred-size width="200" height="26"/>
+                    <maximum-size width="200" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <focusable value="true"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <foreground color="-16777216"/>
+                  <toolTipText value="Select a preset."/>
+                </properties>
+              </component>
+              <component id="fc8d5" class="javax.swing.JButton" binding="addTellMatchButton">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="26"/>
+                    <preferred-size width="200" height="26"/>
+                    <maximum-size width="200" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <focusable value="true"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <text value="Add Tell-Match"/>
+                </properties>
+              </component>
+              <component id="4f183" class="javax.swing.JButton" binding="saveButton" default-binding="true">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="26"/>
+                    <preferred-size width="200" height="26"/>
+                    <maximum-size width="200" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <font name="Helvetica Neue" style="0"/>
+                  <text value="Save "/>
+                  <toolTipText value="Save the data of selected Tell-Match to a preset."/>
+                </properties>
+              </component>
+              <component id="e89d1" class="javax.swing.JButton" binding="removeButton" default-binding="true">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="4" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="26"/>
+                    <preferred-size width="200" height="26"/>
+                    <maximum-size width="200" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <focusable value="true"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <text value="Remove"/>
+                </properties>
+              </component>
+              <grid id="7f632" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="26"/>
+                    <preferred-size width="200" height="26"/>
+                    <maximum-size width="200" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="9a6f8" class="javax.swing.JButton" binding="refreshMidiSystemButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="26"/>
+                        <preferred-size width="100" height="26"/>
+                        <maximum-size width="100" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica Neue" style="0"/>
+                      <text value="Rescan MIDI"/>
+                    </properties>
+                  </component>
+                  <component id="a376b" class="javax.swing.JButton" binding="resetInOutButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="26"/>
+                        <preferred-size width="100" height="26"/>
+                        <maximum-size width="100" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica Neue" style="0"/>
+                      <text value="Reset In/Out"/>
+                      <toolTipText value="Push this button if you want  to change source and destinations according to selection."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="1e61" layout-manager="GridLayoutManager" row-count="5" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="5">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="19" row-span="1" col-span="6" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="true">
+                <minimum-size width="250" height="150"/>
+                <preferred-size width="280" height="150"/>
+                <maximum-size width="300" height="150"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-15175289"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="afd9a" class="javax.swing.JTextField" binding="outgoingMessage">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <disabledTextColor color="-4473925"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <text value="Enter required message."/>
+                  <toolTipText value="Enter a message that you want to send to destinations."/>
+                </properties>
+              </component>
+              <component id="2f773" class="javax.swing.JComboBox" binding="outgoingType">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <editable value="true"/>
+                  <font name="Helvetica Neue" style="0"/>
+                  <foreground color="-16777216"/>
+                  <inheritsPopupMenu value="false"/>
+                  <model/>
+                  <toolTipText value="Outgoing message type."/>
+                </properties>
+              </component>
+              <grid id="d16fc" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="1a183" class="javax.swing.JButton" binding="monitorButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="120" height="26"/>
+                        <preferred-size width="120" height="26"/>
+                        <maximum-size width="120" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Monitor"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b6c95" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="1d132" class="javax.swing.JCheckBox" binding="linkChannelsCheckBox" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="115" height="26"/>
+                        <preferred-size width="115" height="26"/>
+                        <maximum-size width="115" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-15175289"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <text value="Link Channels"/>
+                      <toolTipText value="Link output channel to input channel."/>
+                    </properties>
+                  </component>
+                  <component id="bfd6b" class="javax.swing.JCheckBox" binding="addOrReplaceCheckBox">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="115" height="26"/>
+                        <preferred-size width="115" height="26"/>
+                        <maximum-size width="115" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-15175289"/>
+                      <font name="Helvetica Neue" style="0"/>
+                      <selected value="false"/>
+                      <text value="Replace"/>
+                      <toolTipText value="Every time you are adding new Tell-Match next preset from presets list will be selected."/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="a535d" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="9" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="250" height="26"/>
+                    <preferred-size width="280" height="26"/>
+                    <maximum-size width="300" height="26"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-15175289"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="5a32f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="55" height="26"/>
+                        <preferred-size width="55" height="26"/>
+                        <maximum-size width="55" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica Neue" style="0"/>
+                      <text value=" Latency"/>
+                    </properties>
+                  </component>
+                  <component id="eaa9" class="javax.swing.JComboBox" binding="outputChannelSwitch">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="65" height="26"/>
+                        <preferred-size width="65" height="26"/>
+                        <maximum-size width="65" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <font name="Helvetica Neue" style="0"/>
+                    </properties>
+                  </component>
+                  <component id="9eb1b" class="javax.swing.JSpinner" binding="latencyCompensation">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="65" height="26"/>
+                        <preferred-size width="65" height="26"/>
+                        <maximum-size width="65" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                    </properties>
+                  </component>
+                  <component id="3200e" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="95" height="26"/>
+                        <preferred-size width="95" height="26"/>
+                        <maximum-size width="95" height="26"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Helvetica Neue" style="0"/>
+                      <labelFor value="646d3"/>
+                      <text value="Output Channel"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
