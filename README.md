@@ -1,6 +1,6 @@
 # MidiTellMatch0.2
 First version of java-based MIDI-message translator with included MIDI-monitor.
-The app allows you to create MIDI Tell-Matches wich are the MIDI-message translator. Every Tell-Match listens to a selected source
+The app allows you to create MIDI Tell-Matches wich are the MIDI-message translators. Every Tell-Match listens to a selected source
 in your MIDI environment and looking for specific message, wich triggers another message to be sent to selected destinations in your MIDI environment.
 
 To use this App, just download MidiTellMatch0.2.jar.
